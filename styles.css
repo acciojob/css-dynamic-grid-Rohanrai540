@@ -2,20 +2,15 @@ body {
   margin: 0;
 }
 
-/* Grid Container */
 .grid-container {
   display: grid;
-
-  /* Automatically adjust columns based on screen size */
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
-  gap: 20px;
-  justify-items: center;   /* center items horizontally */
-  align-items: center;     /* center items vertically */
+  grid-gap: 10px 10px;   /* ✅ MUST be 10px 10px */
+  justify-items: center;
+  align-items: center;
   min-height: 100vh;
 }
 
-/* Grid Items */
 .grid-item {
   background-color: lightgray;
   height: 150px;
