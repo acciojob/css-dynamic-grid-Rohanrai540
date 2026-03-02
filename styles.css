@@ -1,1 +1,29 @@
-/*  your css code here. If applicable */
+body {
+  margin: 0;
+}
+
+/* Grid Container */
+.grid-container {
+  display: grid;
+
+  /* Automatically adjust columns based on screen size */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  gap: 20px;
+  justify-items: center;   /* center items horizontally */
+  align-items: center;     /* center items vertically */
+  min-height: 100vh;
+}
+
+/* Grid Items */
+.grid-item {
+  background-color: lightgray;
+  height: 150px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
